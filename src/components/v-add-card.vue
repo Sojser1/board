@@ -3,7 +3,7 @@
     <textarea
       v-model="cardValue"
       type="text"
-      placeholder="Введите что-то там"
+      placeholder="Введите задачу"
       @keydown.enter="saveNewCard"
     ></textarea>
   </div>
