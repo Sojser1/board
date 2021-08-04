@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #373b40;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.btn {
+  color: #4c4f55;
+  cursor: pointer;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.todolist {
+  display: flex;
+  margin: 50px 0;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.todolist__card {
+  background-color: #2f3137;
+  max-width: 22%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%;
+}
+
+.todolist__card-header {
+  line-height: 40px;
+}
+
+.todolist__card-header h2 {
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+
+.todolist__card-item {
+  min-height: 100px;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  overflow-wrap: anywhere;
+  background-color: #1e2021;
+  flex-basis: 25%;
+  position: relative;
+  line-height: 22px;
+}
+.todolist__card-item p {
+  width: 90%;
+}
+
+.todolist__card-item:active {
+  cursor: grabbing;
+}
+
+.todolist__card-item span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+
+.todolist__card-footer-button {
+  position: relative;
+  padding: 0 18px 10px;
+  line-height: 40px;
+}
+
+.todolist__card-footer {
+  height: 40px;
+}
+
+.todolist__card-footer:hover {
+  background-color: #26282c;
+}
+
+
+.first-title {
+  background-color: #ed844c;
+}
+
+.second-title {
+  background-color: #4390ba;
+}
+.third-title {
+  background-color: #f0cc56;
+}
+.fourth-title {
+  background-color: #51b167;
+}
+
+
+span.remove {
+  display: inline-block;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  color: #4c4f55;
+  background-color: transparent;
+  transform: rotate(45deg) scale(2);
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+span.add {
+  display: inline-block;
+  margin-right: 5px;
+  transform: scale(1.5);
+}
