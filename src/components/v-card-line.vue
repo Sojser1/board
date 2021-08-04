@@ -67,6 +67,9 @@ export default {
     },
     saveNewCard(val) {
       this.newCard = false
+      if (val.length === 0) {
+        return
+      }
       const newCard = {
         id: Date.now(),
         value: val,
